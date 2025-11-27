@@ -464,6 +464,65 @@ footer h1{
   font-size: 30px;
 }
 
+.menu-icons{
+  cursor: pointer;
+  display: none;
+  font-size: 30px;
+}
+/*sidebar*/
+.sidebar{
+  background-color: #000000b8;
+  backdrop-filter: blur(10px);
+  border-bottom-left-radius: 100%;
+  bottom: 70%;
+  box-shadow: 0 0 20px rgba(211, 211, 211, .411);
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 0%;
+  z-index: 999;
+}
+.close-icon{
+  color: lightgray;
+  cursor: pointer;
+  font-size: 50px;
+  padding-left: 10px;
+}
+.sidebar ul{
+  padding: 20px;
+}
+.sidebar ul li{
+  margin-bottom: 30px;
+}
+.sidebar ul li a{
+  color: lightgray;
+  font-size: 30px;
+  font-weight: 900;
+  text-shadow: 0 0 15px rgba(128, 128, 128, .256);
+}
+.sidebar .icons{
+  margin-top: 60px;
+  padding-left: 20px;
+  text-wrap: nowrap;
+}
+.sidebar .icons a{
+  cursor: pointer;
+  font-size: 35px;
+  padding: 5px 5px;
+}
+
+/*Open sidebar animation*/
+.sidebar .open-sidebar{
+  animation: openSideBarAnimation 1.5s forwards;
+}
+@keyframes openSideBarAnimation{
+  to{
+    bottom: 0;
+    opacity: 1;
+    width: 80%;
+  }
+}
 /* Blur Effect */
 
 .autoBlur{
@@ -537,7 +596,7 @@ footer h1{
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .blackhole-box video{
     margin-top: -20%;
   }
@@ -578,7 +637,6 @@ footer h1{
   
     .card video {
       height: 60%;
-  
       margin-top: 5%;
     }
   
@@ -594,8 +652,8 @@ footer h1{
   
     @media screen and (max-width: 700px) {
       header {
-        position: fixed;
         height: 50px;
+        position: fixed;
       }
   
       header ul {
@@ -757,7 +815,6 @@ footer h1{
   
       .hero .skills-video-box {
         display: none;
-  
       }
   
       .blackhole-box {
